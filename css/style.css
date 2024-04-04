@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@200&display=swap');
+body {
+    font-family: 'Kantumruy Pro', sans-serif;
+} 
+.navbar .nav-item:hover .nav-link::before{
+  width: 100%;
+}
+
+.navbar .navbar-toggle{
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.navbar .toggle-btn{
+  cursor: pointer;
+  position: relative;
+  top: 5px;
+  z-index: 10;
+}
+
+.navbar #toggle-menu{
+  display: none;
+}
+
+.navbar .toggle-btn .bar{
+  width: 25px;
+  height: 3px;
+  margin: 7px 0 7px auto;
+  transition: all 0.2s ease-in-out;
+  background-color: #222227;
+}
+
+.navbar #toggle-menu:checked + label.toggle-btn .bar:nth-child(2){
+  transform: translateX(50px);
+  opacity: 0;
+}
+
+.navbar #toggle-menu:checked + label.toggle-btn .bar:nth-child(1){
+  transform: translateY(12px) rotate(45deg);
+}
+
+.navbar #toggle-menu:checked + label.toggle-btn .bar:nth-child(3){
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.dropdown-menu, .dropdown-submenu{
+  background-color: #222227;
+  color: #f9f06d;
+  border-radius: 10px;
+}
+
+.dropdown-menu li{
+  position: relative;
+}
+
+.dropdown-item{
+  color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.dropdown-menu .dropdown-submenu{
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: -7px;
+}
+
+.dropdown-menu > li:hover > .dropdown-submenu{
+  display: block;
+}
+
+.dropdown-menu > li:focus > .dropdown-submenu{
+  display: block;
+}
+  
