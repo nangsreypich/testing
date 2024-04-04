@@ -1,117 +1,102 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="../img/logo.ico">
-  <title>EFK Academy</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="../img/logo.png" alt="efk logo" width="50px"
-                    height="50px"><b>EFK Academy</b></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../view/books.html">Books</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" id="drop_cases" role="button"
-                            data-bs-toggle="dropdown">
-                            <i class="fas fa-folder-open"></i>
-                            Courses
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="nav-item">
-                                <a href="#" class="dropdown-item dropdown-toggle">
-                                    English
-                                </a>
-                                <ul class="dropdown-menu dropdown-submenu">
-                                    <li>
-                                        <a href="#" class="dropdown-item">
-                                            Grammar Master1
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="dropdown-item">
-                                            Grammar Master2
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="dropdown-item">
-                                            Grammar Master3
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="dropdown-item">
-                                            Grammar Master4
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#" class="dropdown-item dropdown-toggle">
-                                    Chinese
-                                </a>
-                                <ul class="dropdown-menu dropdown-submenu">
-                                    <li>
-                                        <a href="#" class="dropdown-item">
-                                            Basic Chinese
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="dropdown-item">
-                                            Chinese conversation
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#" class="dropdown-item dropdown-toggle">
-                                    Computer
-                                </a>
-                                <ul class="dropdown-menu dropdown-submenu">
-                                    <li>
-                                        <a href="#" class="dropdown-item">
-                                            Adobe Photoshop
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="dropdown-item">
-                                            Adobe Illustrator
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                </ul>
+<html lang="en" data-bs-theme="">
 
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="width: 600px;">
-                    <button class="btn bg-primary text-white" type="submit">Search</button>
-                    <a href="../view/login.html" class="btn btn-outline-primary ms-2" data-bs-toggle="modal">Log In</a>
-                    <a href="../view/sign_up.html" class="btn btn-outline-danger text-white ms-2" data-bs-toggle="modal">Sign Up</a>
-                </form>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="uploads/logoo.png">
+    <link rel="icon" type="image/x-icon" href="logoo.png">
+    <title>EFK Academy Management System</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<!-- data-bs-theme="dark" -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+    body {
+        font-family: "Kantumruy Pro", sans-serif;
+        font-weight: 500;
+    }
+
+    @media (min-width: 992px) {
+        #carouselExampleIndicators .carousel-inner {
+            width: 90%;
+            margin: auto;
+        }
+    }
+
+    @media (max-width: 991.98px) {
+
+        /* Adjust width for small screens */
+        #carouselExampleIndicators .carousel-inner {
+            width: 100%;
+            margin: auto;
+        }
+    }
+
+    .navbar {
+        padding: 12px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .navbar-brand {
+        font-size: 28px;
+    }
+
+    .nav-link {
+        font-size: 20px;
+    }
+
+    .text-body-secondary {
+        --bs-text-opacity: 1;
+        color: #000000 !important;
+    }
+
+    .fw-light {
+        font-weight: bold !important;
+    }
+</style>
+
+<body>
+    <form id="signOutForm" action="logout.php" method="post">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="uploads/logoo.png" alt="efk logo" width="50px"
+                        height="50px">មជ្ឈមណ្ឌល អ៊ី អេហ្វ ខេ អេឃើដឹមី</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="books.html">Books</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                            style="width: 200px;">
+                        <button class="btn bg-primary text-white mt-2" type="submit">Search</button>
+                        <input type="hidden" name="do" value="user_login" />
+                        <a href="login.html" class="btn btn-outline-primary ms-2 mt-2" data-bs-toggle="modal">Log
+                            In</a>
+                        <a href="sign_up.html" class="btn btn-outline-danger ms-2 mt-2"
+                            data-bs-toggle="modal">Register</a>
+                    </form>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
     <div class="container-fluid vh-100" style="margin-top:100px">
         <div class="" style="margin-top:100px">
